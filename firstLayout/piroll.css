@@ -21,9 +21,6 @@ html, body{
 body{
     background-color: rgb(170, 170, 170);
 }
-div{
-    border: 1px solid black;
-}
 
 
 #wrapper{
@@ -82,6 +79,7 @@ div{
     clear: both;
     float: right;
 
+    border: 0px;
     margin-top: 170px;
     margin-right: 9%;
     margin-bottom: 200px;
@@ -95,6 +93,7 @@ div{
 }
 #header #banner p:nth-child(2){
     font-size: 18px;
+    line-height: 28px;
     color: #787878;
     margin-bottom: 40px;
  }
@@ -133,7 +132,6 @@ div{
     width: 50%;
 
     font-size: 16px;
-    /* font-weight: ; */
     font-family: "NunitoSans";
     color: #787878;
 }
@@ -200,11 +198,38 @@ div{
     clear: both;
     float: left;
     width: 100%;
+    padding: 100px 0px;
     background: #10c9c3;
 }
-#numbers > *, #numbers > * span{
+#numbers ul{
+    list-style: none;
+    float: left;
+    width: 80%;
+    
+    margin-left: 10%;
+}
+#numbers ul li{
+    float: left;
+    width: 25%;
+}
+#numbers ul *{
+    border: 0px; 
+    color: white;
+}
+#numbers ul div p:first-child{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#numbers ul div p:last-child{
+    font-size: 12px;
+}
+#numbers ul div{
+    float: left;
+    margin-left: 30px;
+}
+#numbers ul > * span{
     float: left;
 }
-#numbers #portfolio span{
-    
-}
+
+
+/* WORK */
