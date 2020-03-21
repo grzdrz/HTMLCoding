@@ -21,6 +21,7 @@ html, body{
 body{
     background-color: rgb(170, 170, 170);
 }
+*{border: 1px solid black;}
 
 
 #wrapper{
@@ -233,3 +234,29 @@ body{
 
 
 /* WORK */
+#work{
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #f5f5f5;
+}
+#work div{
+    float: left;
+    width: 25%;
+    border: 0px;
+}
+#work .row2:first-child{
+    clear: both;
+}
+#work div.row1:nth-child(2n+1){
+    background: #838383;
+}
+#work div.row1:nth-child(2n){
+    background: #dddddd;
+}
+#work div.row2:nth-child(2n+1){
+    background: #dddddd;
+}
+#work div.row2:nth-child(2n){
+    background: #838383;
+}
