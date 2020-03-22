@@ -63,7 +63,6 @@ body{
     min-width: 100px;
 
     text-align: right;
-    /* font-family: "Montserrat", sans-serif; */
     font-family: Montserrat;
     font-size: 12px;
     line-height: 24px;
@@ -89,6 +88,7 @@ body{
 }
 #header #banner p:first-child{
    font-size: 38px;
+   font-weight: bold;
    margin-bottom: 40px;
 }
 #header #banner p:nth-child(2){
@@ -111,20 +111,21 @@ body{
 
  /* ABOUT */
  #about{
-     clear: both;
-     float: left;
-     width: 100%;
-     padding-top: 100px;
-     padding-bottom: 100px;
-     background: white;
+    clear: both;
+    float: left;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: white;
  }
  #about p{
-     width: 100%;
-     text-align: center;
-     font-family: "Montserrat";
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat";
  }
  #about p:first-child{
-     font-size: 30px;
+    font-size: 30px;
+    font-weight: bold;
  }
  #about p:nth-child(2){
     margin-top: 40px;
@@ -161,7 +162,7 @@ body{
 #skills #content p{
     margin-top: 40px;
     font-family: "Montserrat";
-    font-weight: 500;
+    font-weight: bold;
     font-size: 12px;
 }
 #skills #content p:nth-child(1){
@@ -302,6 +303,7 @@ body{
 }
 #workProcess p:first-child{
     font-size: 30px;
+    font-weight: bold;
     margin-bottom: 45px;
 }
 #workProcess p:nth-child(2){
@@ -399,4 +401,163 @@ body{
 #testimonials ul li{
     display: inline;
     margin: 0px 5px;
+}
+
+
+/* CLIENTS */
+#clients{
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 70px 0px;
+    background: white;
+}
+#clients ul{
+    width: 100%;
+    list-style: none;
+}
+#clients ul li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+
+/* NEED A PROJECT */
+#needAProject{
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 100px 0px;
+    text-align: center;
+    background: #f5f5f5;
+}
+#needAProject p{
+    margin-bottom: 40px;
+}
+#needAProject p:nth-child(1){
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: bold;
+}
+#needAProject p:nth-child(2){
+    margin: 0px 33% 40px;
+    font-family: "NunitoSans";
+    font-size: 16px;
+    color: #787878;
+}
+#needAProject form{
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+}
+#needAProject form > *{
+    font-family: "NunitoSans";
+    font-size: 15px;
+    color: #787878;
+    box-sizing: border-box;
+}
+#needAProject form input:nth-child(1){
+    float: left;
+    width: 45%;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#needAProject form input:nth-child(2){
+    float: right;
+    width: 45%;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#needAProject form input:nth-child(3){
+    clear: both;
+    float: left; 
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#needAProject form textarea{
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    resize: none;
+}
+#needAProject form button:last-child{
+    clear: both;
+
+    width: 27%;
+    height: 50px;
+    background: #10c9c3;
+
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: white;
+}
+
+
+/* FOOTER */
+#footer{
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 100px 0px;
+    background: #141414;
+}
+#footer *{
+    overflow: hidden;
+    float: left;
+    color: #8f8f8f;
+}
+#footer div:first-child{
+    margin-left: 7%;
+    width: 16%;
+}
+#footer div:nth-child(2){
+    margin-left: 18%;
+    width: 11%;
+}
+#footer ul:nth-child(3){
+    margin-left: 11%;
+}
+#footer ul:nth-child(4){
+    margin-left: 4%;
+}
+#footer ul:nth-child(5){
+    margin-left: 10%;
+}
+#footer div:first-child p:first-child{
+    margin-bottom: 30px;
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: white;
+}
+#footer div:first-child p:last-child{
+    font-family: "NunitoSans";
+    font-size: 15px;
+}
+#footer div:nth-child(2) p{
+    font-size: 15px;
+}
+#footer ul{
+    list-style: none;
+}
+#footer ul li{
+    clear: both;
+    font-family: "NunitoSans";
+    font-size: 15px;
+}
+#footer ul li a{
+    text-decoration: none;
 }
