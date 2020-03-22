@@ -286,3 +286,117 @@ body{
 #work div:nth-child(n):hover > span{
     display: block;
 }
+
+
+/* WORK PROCESS */
+#workProcess{
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 100px 0px;
+    background: white;
+}
+#workProcess p{
+    font-family: "Montserrat";
+    text-align: center;
+}
+#workProcess p:first-child{
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+#workProcess p:nth-child(2){
+    font-size: 16px;
+    color: #787878;
+    margin-left: 31%;
+    margin-right: 31%;
+    margin-bottom: 60px;
+}
+#workProcess #video{
+    clear: both;
+    float: left;
+    width: 100%;
+}
+#workProcess #video img{
+    width: 86%;
+    margin-left: 7%;
+}
+
+
+/* SERVICES */
+#services{
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 100px 0px;
+    background: #f5f5f5;
+}
+#services ul{
+    clear: both;
+    float: left;
+    list-style: none;
+    width: 86%;
+    margin-left: 7%;
+}
+#services ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+#services ul li:nth-child(1)
+{
+    margin-bottom: 60px;
+}
+#services ul li:nth-child(5)
+{
+    clear: both;
+}
+#services ul li a span{
+    margin-bottom: 30px;
+    color: #656565;
+}
+#services ul li p{
+    font-family: "Montserrat";
+}
+#services ul li p:nth-child(2){
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#services ul li p:nth-child(3){
+    color: #787878;
+    font-size: 16px;
+    margin: 0px 10%;
+}
+
+
+/* TESTIMONIALS */
+#testimonials{
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #10c9c3;
+    padding: 180px 0px 60px 0px;
+    text-align: center;
+}
+#testimonials p{
+    font-family: "Montserrat";
+    color: white;
+}
+#testimonials p:nth-child(1){
+    margin: 0px 20% 40px;
+    font-size: 24px;
+}
+#testimonials p:nth-child(2){
+    font-size: 12px;
+    margin-bottom: 110px;
+}
+#testimonials ul{
+    clear: both;
+    display: inline;
+    list-style: none;
+}
+#testimonials ul li{
+    display: inline;
+    margin: 0px 5px;
+}
