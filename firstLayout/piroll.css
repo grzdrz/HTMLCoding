@@ -21,7 +21,6 @@ html, body{
 body{
     background-color: rgb(170, 170, 170);
 }
-*{border: 1px solid black;}
 
 
 #wrapper{
@@ -240,10 +239,31 @@ body{
     width: 100%;
     background: #f5f5f5;
 }
+#work #table{
+    clear: both;
+    float: left;
+    width: 100%;
+}
+#work #loadMore{
+    width: 100%;
+    margin: 45px 0px;
+}
+#work #loadMore p{
+    font-family: "Montserrat";
+    font-size: 12px;
+    text-align: center;
+    color: #8e8e8e;
+}
 #work div{
     float: left;
     width: 25%;
-    border: 0px;
+    position: relative;
+}
+#work div span{
+    display: none;
+    margin-top: 45%;
+    margin-left: 45%;
+    color: white;
 }
 #work .row2:first-child{
     clear: both;
@@ -259,4 +279,10 @@ body{
 }
 #work div.row2:nth-child(2n){
     background: #838383;
+}
+#work #table div:nth-child(n):hover{
+    background: #252525;
+}
+#work div:nth-child(n):hover > span{
+    display: block;
 }
