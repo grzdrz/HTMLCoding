@@ -1,0 +1,31 @@
+mixin social-media(options)
+  -
+    const {
+      links = [
+        {
+          ref: "https://facebook.com",
+          imageName: "facebook-icon",
+          alt: "Facebook",
+        },
+        {
+          ref: "https://telegram.com",
+          imageName: "telegram-icon",
+          alt: "Telegram",
+        },
+        {
+          ref: "https://twitter.com",
+          imageName: "twitter-icon",
+          alt: "Twitter",
+        },
+        {
+          ref: "https://medium.com",
+          imageName: "medium-icon",
+          alt: "Medium",
+        },
+      ],
+    } = options;
+
+  nav(class=["social-media"])
+    - for(let link of links)
+      a(class=["social-media__ref"] href=link.ref target="_blank" rel="noopener noreferrer")
+        img(class=["social-media__image"] src=`./src/components/social-media/images/${link.imageName}.svg` alt=link.alt)

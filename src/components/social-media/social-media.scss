@@ -1,0 +1,15 @@
+.social-media {
+  line-height: 0rem;
+
+  &__ref {
+    margin: 0rem 1.045rem;
+
+    &:first-of-type {
+      margin-left: 0rem;
+    }
+
+    &:last-of-type {
+      margin-right: 0rem;
+    }
+  }
+}

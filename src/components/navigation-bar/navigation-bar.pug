@@ -1,0 +1,17 @@
+mixin navigation-bar(options)
+  -
+    const {
+      list = [
+        {url: "https://www.google.com/", text: "Home"},
+        {url: "https://www.google.com/", text: "Blog"},
+        {url: "https://www.google.com/", text: "Features"},
+        {url: "https://www.google.com/", text: "Pricing"},
+        {url: "https://www.google.com/", text: "Documentation"},
+      ],
+    } = options;
+
+  nav(class=["navigation-bar"])
+    - for(let item of list)
+      li(class=["navigation-bar__item"])
+        a(class=["navigation-bar__item-ref"] href=item.url target="_blank" rel="noopener noreferrer")
+          span(class=["navigation-bar__item-text"])= item.text

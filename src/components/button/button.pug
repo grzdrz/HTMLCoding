@@ -1,20 +1,29 @@
 mixin button(options)
   - 
     const {
+      backgroundColor = "",
+      color = "",
       buttonType = "a",
       text = "click me",
       url = "",
       isForHeader = false,
     } = options;
-    const textClasses = (isForHeader ? "button__text_in-header" : "");
+    const containerClasses = [];
+    const textClasses = [];
 
-  div(class=["button"])
+    containerClasses.push(backgroundColor ? `button_background-color_${backgroundColor}` : "");
+    textClasses.push(isForHeader ? "button__text_in-header" : "");
+    textClasses.push(color ? `button__text_color_${color}` : "");
+
+  div(class=["button"].concat(containerClasses))
     - if(buttonType === "a")
       a(class=["button__basis"] 
         href=(url ? url : "https://errorpage.com") target=(url ? "_blank" : "") rel=(url ? "noopener noreferrer" : ""))
+        span(class=["button__text"].concat(textClasses))= text
     - else if(buttonType === "button")
       button(class=["button__basis"])
+        span(class=["button__text"].concat(textClasses))= text
     - else if(buttonType === "submit")
       label(class=["button__basis"])
         input(class=["button__submit"] type="submit")
-    p(class=["button__text"].concat(textClasses))= text
+        span(class=["button__text"].concat(textClasses))= text

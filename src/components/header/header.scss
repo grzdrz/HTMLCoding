@@ -1,0 +1,25 @@
+@import '../logo/logo.scss';
+@import '../navigation-bar/navigation-bar.scss';
+@import '../social-media/social-media.scss';
+@import '../button/button.scss';
+
+.header {
+  display: grid;
+  grid-template-columns: max-content auto max-content min-content;
+  align-items: center;
+  padding: 1.1rem 7.3125rem 1.2rem;
+  border-bottom: 1px solid rgb(216, 227, 254);
+
+  &__navigaton-bar {
+    margin-left: 4.56rem;
+  }
+
+  &__social-media {
+    margin-right: 2.75rem;
+  }
+
+  &__button {
+    width: 7.0625rem;
+    height: 2.6875rem;
+  }
+}

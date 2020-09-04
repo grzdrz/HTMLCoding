@@ -1,0 +1,35 @@
+.navigation-bar {
+  list-style: none;
+  display: flex;
+
+  &__item {
+    margin: 0rem 1.3rem;
+
+    &:first-of-type {
+      margin-left: 0rem;
+    }
+
+    &:last-of-type {
+      margin-right: 0rem;
+    }
+  }
+
+  &__item-ref {
+    text-decoration: none;
+  }
+
+  &__item-text {
+    color: rgb(105, 124, 166);
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    text-shadow: 0rem 0rem 0.3125rem rgb(230, 230, 230);
+
+    &:hover {
+      font-weight: bold;
+      color: rgb(94, 129, 254);
+    }
+  }
+}

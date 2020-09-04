@@ -1,10 +1,8 @@
 extends ../base/base
 
-include ../../components/button/button.pug
+include ../../components/header/header.pug
 
 block body
   div(class=["page1"])
-    div(class=["page1__contact-button"])
-      +button({
-        text: "contact us",
-      })
+    div(class=["page1__header"])
+      +header({})
