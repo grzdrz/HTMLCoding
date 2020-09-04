@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.eot);
+  src: url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format("woff2"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.woff) format("woff"), url(src/assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  src: url(src/assets/fonts/Montserrat/montserrat-regular.eot);
+  src: url(src/assets/fonts/Montserrat/montserrat-regular.woff2) format("woff2"), url(src/assets/fonts/Montserrat/montserrat-regular.woff) format("woff"), url(src/assets/fonts/Montserrat/montserrat-regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  src: url(src/assets/fonts/Montserrat/montserrat-bold.eot);
+  src: url(src/assets/fonts/Montserrat/montserrat-bold.woff2) format("woff2"), url(src/assets/fonts/Montserrat/montserrat-bold.woff) format("woff"), url(src/assets/fonts/Montserrat/montserrat-bold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: normal;
+  src: url(src/assets/fonts/Quicksand/quicksand-regular.eot);
+  src: url(src/assets/fonts/Quicksand/quicksand-regular.woff2) format("woff2"), url(src/assets/fonts/Quicksand/quicksand-regular.woff) format("woff"), url(src/assets/fonts/Quicksand/quicksand-regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: bold;
+  src: url(src/assets/fonts/Quicksand/quicksand-bold.eot);
+  src: url(src/assets/fonts/Quicksand/quicksand-bold.woff2) format("woff2"), url(src/assets/fonts/Quicksand/quicksand-bold.woff) format("woff"), url(src/assets/fonts/Quicksand/quicksand-bold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url(src/assets/fonts/OpenSans/open-sans-regular.eot);
+  src: url(src/assets/fonts/OpenSans/open-sans-regular.woff2) format("woff2"), url(src/assets/fonts/OpenSans/open-sans-regular.woff) format("woff"), url(src/assets/fonts/OpenSans/open-sans-regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url(src/assets/fonts/OpenSans/open-sans-bold.eot);
+  src: url(src/assets/fonts/OpenSans/open-sans-bold.woff2) format("woff2"), url(src/assets/fonts/OpenSans/open-sans-bold.woff) format("woff"), url(src/assets/fonts/OpenSans/open-sans-bold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url(src/assets/fonts/NunitoSans/nunito-sans-regular.eot);
+  src: url(src/assets/fonts/NunitoSans/nunito-sans-regular.woff2) format("woff2"), url(src/assets/fonts/NunitoSans/nunito-sans-regular.woff) format("woff"), url(src/assets/fonts/NunitoSans/nunito-sans-regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "NunitoSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url(src/assets/fonts/NunitoSans/nunito-sans-bold.eot);
+  src: url(src/assets/fonts/NunitoSans/nunito-sans-bold.woff2) format("woff2"), url(src/assets/fonts/NunitoSans/nunito-sans-bold.woff) format("woff"), url(src/assets/fonts/NunitoSans/nunito-sans-bold.ttf) format("truetype"); }
+
+/* $color-gray-blue: rgb(173, 181, 189);
+$color-blue: rgb(139, 164, 249);
+$color-purple: rgba(188, 156, 255, 1);
+$color-green: rgba(111, 207, 151, 1);
+$color-dark-shade-5: rgba(31, 32, 65, 0.05);
+$color-dark-shade-10: rgba(31, 32, 65, 0.1);
+$color-dark-shade-25: rgba(31, 32, 65, 0.25);
+$color-dark-shade-30: rgba(31, 32, 65, 0.3);
+$color-dark-shade-50: rgba(31, 32, 65, 0.5);
+$color-dark-shade-75: rgba(31, 32, 65, 0.75);
+$color-dark-shade-100: rgba(31, 32, 65, 1);
+
+$gradient-purple-to-blue: linear-gradient(to bottom, rgb(188, 156, 255), rgb(139, 164, 249));
+$gradient-purple-to-blue-50: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+$gradient-purple-to-blue-25: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+$gradient-green-to-turquoise: linear-gradient(180deg, rgb(111, 207, 151) 0%, rgb(102, 210, 234) 100%);
+$gradient-yellow-to-peach: linear-gradient(180deg, rgb(255, 227, 156) 0%, rgb(255, 186, 156) 100%);
+$gradient-gray-to-blue: linear-gradient(180deg, rgb(145, 145, 145) 0%, rgb(61, 73, 117) 100%); */
+*,
+*:after,
+*:before {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box; }
+
+html {
+  font-family: Quicksand, OpenSans, Arial, sans-serif;
+  font-size: 16px;
+  color: #3d4f9f;
+  background: white; }
+
+html,
+body {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.logo {
+  width: 1.625rem;
+  height: 1.625rem;
+  background: #5e81fe;
+  border-radius: 50%; }
+
+.navigation-bar {
+  list-style: none;
+  display: flex; }
+  .navigation-bar__item {
+    margin: 0rem 1.3rem; }
+    .navigation-bar__item:first-of-type {
+      margin-left: 0rem; }
+    .navigation-bar__item:last-of-type {
+      margin-right: 0rem; }
+  .navigation-bar__item-ref {
+    text-decoration: none; }
+  .navigation-bar__item-text {
+    color: #697ca6;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    text-shadow: 0rem 0rem 0.3125rem #e6e6e6; }
+    .navigation-bar__item-text:hover {
+      font-weight: bold;
+      color: #5e81fe; }
+
+.social-media {
+  line-height: 0rem; }
+  .social-media__ref {
+    margin: 0rem 1.045rem; }
+    .social-media__ref:first-of-type {
+      margin-left: 0rem; }
+    .social-media__ref:last-of-type {
+      margin-right: 0rem; }
+
+/* $color-gray-blue: rgb(173, 181, 189);
+$color-blue: rgb(139, 164, 249);
+$color-purple: rgba(188, 156, 255, 1);
+$color-green: rgba(111, 207, 151, 1);
+$color-dark-shade-5: rgba(31, 32, 65, 0.05);
+$color-dark-shade-10: rgba(31, 32, 65, 0.1);
+$color-dark-shade-25: rgba(31, 32, 65, 0.25);
+$color-dark-shade-30: rgba(31, 32, 65, 0.3);
+$color-dark-shade-50: rgba(31, 32, 65, 0.5);
+$color-dark-shade-75: rgba(31, 32, 65, 0.75);
+$color-dark-shade-100: rgba(31, 32, 65, 1);
+
+$gradient-purple-to-blue: linear-gradient(to bottom, rgb(188, 156, 255), rgb(139, 164, 249));
+$gradient-purple-to-blue-50: linear-gradient(to bottom, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+$gradient-purple-to-blue-25: linear-gradient(to bottom, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+$gradient-green-to-turquoise: linear-gradient(180deg, rgb(111, 207, 151) 0%, rgb(102, 210, 234) 100%);
+$gradient-yellow-to-peach: linear-gradient(180deg, rgb(255, 227, 156) 0%, rgb(255, 186, 156) 100%);
+$gradient-gray-to-blue: linear-gradient(180deg, rgb(145, 145, 145) 0%, rgb(61, 73, 117) 100%); */
+.button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: white; }
+  .button_border-radius_2px {
+    border-radius: 2px; }
+  .button_border-radius_5px {
+    border-radius: 5px; }
+  .button_background-color_transparent {
+    background: transparent; }
+  .button_background-color_white {
+    background: white; }
+  .button_background-color_gray {
+    background: #e8ecf4; }
+  .button_background-color_light-blue {
+    background: #d2e1ff; }
+  .button_background-color_blue {
+    background: #4c85ff; }
+  .button_background-color_dark-blue {
+    background: #4d6ce1; }
+  .button__basis {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    outline: none; }
+  .button > button {
+    width: -webkit-fill-available; }
+  .button__text {
+    cursor: pointer;
+    width: 100%;
+    /* margin: 0rem 1.1875rem 0rem 1.1875rem; */
+    background: transparent;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    /* text-transform: uppercase; */
+    white-space: nowrap;
+    overflow: hidden; }
+    .button__text_color_white {
+      color: white; }
+    .button__text_color_light-blue {
+      color: #c7d3ff; }
+    .button__text_color_light-gray-blue {
+      color: #a5b5d9; }
+    .button__text_color_gray-blue {
+      color: #7382a3; }
+    .button__text_color_dark-gray-blue {
+      color: #565f82; }
+    .button__text_color_blue {
+      color: #3a79ff; }
+  .button__submit {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0; }
+
+.header {
+  display: grid;
+  grid-template-columns: max-content auto max-content min-content;
+  align-items: center;
+  padding: 1.1rem 7.3125rem 1.2rem;
+  border-bottom: 1px solid #d8e3fe; }
+  .header__navigaton-bar {
+    margin-left: 4.56rem; }
+  .header__social-media {
+    margin-right: 2.75rem; }
+  .header__button {
+    width: 7.0625rem;
+    height: 2.6875rem; }
+
+.page1__contact-button {
+  width: 11.25rem; }
+
