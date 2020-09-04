@@ -1,0 +1,11 @@
+@import './mixins.scss';
+
+@include setFont('Material Icons', normal, 400, '../assets/fonts/MaterialIcons/MaterialIcons-Regular');
+@include setFont('Montserrat', normal, normal, '../assets/fonts/Montserrat/montserrat-regular');
+@include setFont('Montserrat', normal, bold, '../assets/fonts/Montserrat/montserrat-bold');
+@include setFont('Quicksand', normal, normal, '../assets/fonts/Quicksand/quicksand-regular');
+@include setFont('Quicksand', normal, bold, '../assets/fonts/Quicksand/quicksand-bold');
+@include setFont('OpenSans', normal, normal, '../assets/fonts/OpenSans/open-sans-regular');
+@include setFont('OpenSans', normal, bold, '../assets/fonts/OpenSans/open-sans-bold');
+@include setFont('NunitoSans', normal, normal, '../assets/fonts/NunitoSans/nunito-sans-regular');
+@include setFont('NunitoSans', normal, bold, '../assets/fonts/NunitoSans/nunito-sans-bold');

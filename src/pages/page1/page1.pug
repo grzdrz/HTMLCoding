@@ -1,0 +1,10 @@
+extends ../base/base
+
+include ../../components/button/button.pug
+
+block body
+  div(class=["page1"])
+    div(class=["page1__contact-button"])
+      +button({
+        text: "contact us",
+      })

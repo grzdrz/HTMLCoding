@@ -1,0 +1,53 @@
+@import '../../assets/constants.scss';
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: $turquoise;
+
+  &__basis {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    margin: 0.125rem;
+    padding: 0rem 0.5625rem 0rem 1.1875rem;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+  }
+
+  & > button {
+    width: -webkit-fill-available;
+  }
+
+  &__text {
+    cursor: pointer;
+    width: 100%;
+    margin: 0rem 1.1875rem 0rem 1.1875rem;
+    background: transparent;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 2.75rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__submit {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+  }
+}

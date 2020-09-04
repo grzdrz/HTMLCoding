@@ -1,0 +1,20 @@
+mixin button(options)
+  - 
+    const {
+      buttonType = "a",
+      text = "click me",
+      url = "",
+      isForHeader = false,
+    } = options;
+    const textClasses = (isForHeader ? "button__text_in-header" : "");
+
+  div(class=["button"])
+    - if(buttonType === "a")
+      a(class=["button__basis"] 
+        href=(url ? url : "https://errorpage.com") target=(url ? "_blank" : "") rel=(url ? "noopener noreferrer" : ""))
+    - else if(buttonType === "button")
+      button(class=["button__basis"])
+    - else if(buttonType === "submit")
+      label(class=["button__basis"])
+        input(class=["button__submit"] type="submit")
+    p(class=["button__text"].concat(textClasses))= text
