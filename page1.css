@@ -236,7 +236,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5.625rem; }
+  margin-top: 5.625rem;
+  margin-bottom: 210px; }
 
 .hero-image__top-text {
   margin-right: 0.3125rem;
@@ -278,6 +279,30 @@ body {
   box-shadow: 0rem 0.625rem 3.125rem rgba(201, 209, 231, 0.6); }
   .hero-image__play-button-arrow-svg {
     margin-left: 0.125rem; }
+
+.hero-image__chart {
+  height: 347px;
+  background-image: url(src/components/hero-image/images/chart.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.customers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 3.7rem 0rem 2.75rem;
+  border-top: 1px solid #d8e3fe;
+  border-bottom: 1px solid #d8e3fe; }
+  .customers__item {
+    margin: 0rem 2.375rem;
+    line-height: 2.375rem; }
+    .customers__item:first-of-type {
+      margin-left: 0rem; }
+    .customers__item:last-of-type {
+      margin-right: 0rem; }
+  .customers__ref:hover .customers__ref-path {
+    fill: #5982e7; }
 
 .logo {
   width: 1.625rem;
