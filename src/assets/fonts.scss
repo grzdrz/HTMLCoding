@@ -9,3 +9,8 @@
 @include setFont('OpenSans', normal, bold, '../assets/fonts/OpenSans/open-sans-bold');
 @include setFont('NunitoSans', normal, normal, '../assets/fonts/NunitoSans/nunito-sans-regular');
 @include setFont('NunitoSans', normal, bold, '../assets/fonts/NunitoSans/nunito-sans-bold');
+
+@include setFont('Roboto', normal, bold, '../assets/fonts/Roboto/roboto-bold');
+@include setFont('Roboto', normal, 500, '../assets/fonts/Roboto/roboto-500');
+@include setFont('Roboto', normal, normal, '../assets/fonts/Roboto/roboto-regular');
+@include setFont('Roboto', normal, 300, '../assets/fonts/Roboto/roboto-300');

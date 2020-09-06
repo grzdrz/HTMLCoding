@@ -1,0 +1,57 @@
+.hero-image {
+  &__central-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.625rem;
+  }
+
+  &__top-text {
+    margin-right: 0.3125rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 0.625rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgb(61, 79, 159);
+  }
+
+  &__central-text {
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: -0.03rem;
+    color: rgb(61, 79, 159);
+
+    &-last-word {
+      font-weight: bold;
+    }
+  }
+
+  &__bottom-text {
+    font-family: Roboto;
+    font-size: 0.9375rem;
+    letter-spacing: 0.03em;
+    color: rgb(141, 150, 189);
+    margin-top: 1.4375rem;
+    max-width: 31.25rem;
+    text-align: center;
+    line-height: 1.75rem;
+  }
+
+  &__play-button {
+    width: 3.25rem;
+    height: 3.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0rem 0.625rem 3.125rem rgba(201, 209, 231, 0.6);
+
+    &-arrow-svg {
+      margin-left: 0.125rem;
+    }
+  }
+}

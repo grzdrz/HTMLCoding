@@ -1,11 +1,14 @@
 extends ../base/base
 
 include ../../components/header/header.pug
+include ../../components/hero-image/hero-image.pug
 include ../../components/footer/footer.pug
 
 block body
   div(class=["page1"])
     div(class=["page1__header"])
-      +header({})
+      +header()
+    div(class=["page1__hero-image"])
+      +hero-image()
     div(class=["page1__footer"])
-      +footer({})
+      +footer()

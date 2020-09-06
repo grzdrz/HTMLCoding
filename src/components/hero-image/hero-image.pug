@@ -1,0 +1,22 @@
+include ./images/arrow.pug
+
+mixin hero-image(options = {})
+  -
+    const {
+
+    } = options;
+
+  div(class=["hero-image"])
+    p(class=["hero-image__central-content"]) 
+      span(class=["hero-image__top-text"]) 
+        | PLAN YOUR LIFE
+      span(class=["hero-image__central-text"])
+        | Increase your 
+        span(class=["hero-image__central-text-last-word"])
+          | productivity
+      span(class=["hero-image__bottom-text"])
+        | Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu 
+        | atqui laudem an, insolens gubergren similique est cu. Et vel modus 
+        | congue vituperata.
+      span(class=["hero-image__play-button"])
+        +arrow()
