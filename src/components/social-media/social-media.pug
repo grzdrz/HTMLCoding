@@ -1,4 +1,9 @@
-mixin social-media(options)
+include ./images/facebook-icon.pug
+include ./images/medium-icon.pug
+include ./images/telegram-icon.pug
+include ./images/twitter-icon.pug
+
+mixin social-media(options = {})
   -
     const {
       links = [
@@ -28,4 +33,4 @@ mixin social-media(options)
   nav(class=["social-media"])
     - for(let link of links)
       a(class=["social-media__ref"] href=link.ref target="_blank" rel="noopener noreferrer")
-        img(class=["social-media__image"] src=`./src/components/social-media/images/${link.imageName}.svg` alt=link.alt)
+        +#{link.imageName}()

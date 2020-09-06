@@ -1,8 +1,11 @@
 extends ../base/base
 
 include ../../components/header/header.pug
+include ../../components/footer/footer.pug
 
 block body
   div(class=["page1"])
     div(class=["page1__header"])
       +header({})
+    div(class=["page1__footer"])
+      +footer({})

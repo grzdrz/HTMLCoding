@@ -1,0 +1,26 @@
+include ../logo/logo
+include ../navigation-bar/navigation-bar
+include ../social-media/social-media
+include ../button/button
+
+mixin footer(options = {})
+  - 
+    const { 
+
+    } = options;
+
+  footer(class=["footer"])
+    div(class=["footer__logo"])
+      +logo({})
+    div(class=["footer__navigaton-bar"])
+      +navigation-bar({})
+    div(class=["footer__social-media"])
+      +social-media({})
+    div(class=["footer__button"])
+      +button({
+        backgroundColor: "light-blue",
+        color: "blue",
+        text: "Get started",
+      })
+    p(class=["footer__copyright"])
+      | Copyright © 2018 by Random site

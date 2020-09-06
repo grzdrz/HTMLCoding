@@ -3,12 +3,12 @@
 @import '../social-media/social-media.scss';
 @import '../button/button.scss';
 
-.header {
+.footer {
   display: grid;
   grid-template-columns: max-content auto max-content min-content;
+  grid-template-rows: auto auto;
   align-items: center;
   padding: 1.1rem 7.3125rem 1.2rem;
-  border-bottom: 1px solid rgb(216, 227, 254);
 
   &__logo {
     margin-right: 4.56rem;
@@ -21,5 +21,14 @@
   &__button {
     width: 7.0625rem;
     height: 2.6875rem;
+  }
+
+  &__copyright {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 1.75rem;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: rgb(174, 184, 208);
   }
 }
