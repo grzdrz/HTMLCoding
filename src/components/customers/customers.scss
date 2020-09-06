@@ -1,0 +1,27 @@
+.customers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 3.7rem 0rem 2.75rem;
+  border-top: 1px solid rgb(216, 227, 254);
+  border-bottom: 1px solid rgb(216, 227, 254);
+
+  &__item {
+    margin: 0rem 2.375rem;
+    line-height: 2.375rem;
+
+    &:first-of-type {
+      margin-left: 0rem;
+    }
+
+    &:last-of-type {
+      margin-right: 0rem;
+    }
+  }
+
+  &__ref {
+    &:hover .customers__ref-path {
+      fill: rgb(89, 130, 231);
+    }
+  }
+}

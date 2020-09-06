@@ -1,0 +1,38 @@
+include ./images/bitbucket.pug
+include ./images/watch.pug
+include ./images/facebook.pug
+include ./images/atlassian.pug
+include ./images/audi.pug
+
+mixin customers(options = {})
+  -
+    const {
+      refs = [
+        {
+          link: "https://www.google.ru/",
+          linkName: "bitbucket",
+        },
+        {
+          link: "https://www.google.ru/",
+          linkName: "watch",
+        },
+        {
+          link: "https://www.google.ru/",
+          linkName: "facebook",
+        },
+        {
+          link: "https://www.google.ru/",
+          linkName: "atlassian",
+        },
+        {
+          link: "https://www.google.ru/",
+          linkName: "audi",
+        },
+      ],
+    } = options;
+
+  ul(class=["customers"])
+    - for(let ref of refs)
+      li(class=["customers__item"])
+        a(class=["customers__ref"] href=ref.link target="_blank" rel="noopener noreferrer")
+          +#{ref.linkName}()

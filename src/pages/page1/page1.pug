@@ -2,6 +2,7 @@ extends ../base/base
 
 include ../../components/header/header.pug
 include ../../components/hero-image/hero-image.pug
+include ../../components/customers/customers.pug
 include ../../components/footer/footer.pug
 
 block body
@@ -10,5 +11,7 @@ block body
       +header()
     div(class=["page1__hero-image"])
       +hero-image()
+    div(class=["page1__customers"])
+      +customers()
     div(class=["page1__footer"])
       +footer()

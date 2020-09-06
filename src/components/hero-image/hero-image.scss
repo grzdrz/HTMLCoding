@@ -4,6 +4,9 @@
     flex-direction: column;
     align-items: center;
     margin-top: 5.625rem;
+
+
+    margin-bottom: 210px;//////
   }
 
   &__top-text {
@@ -53,5 +56,13 @@
     &-arrow-svg {
       margin-left: 0.125rem;
     }
+  }
+
+  &__chart {
+    height: 347px;
+    background-image: url(/src/components/hero-image/images/chart.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
