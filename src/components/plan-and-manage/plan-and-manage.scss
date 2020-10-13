@@ -1,0 +1,94 @@
+.plan-and-manage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 170px 81px 170px 271px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top-text {
+    margin-bottom: 1.6875rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__central-text {
+    margin-bottom: 1.6875rem;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+
+    &-central-word {
+      font-weight: 500;
+    }
+  }
+
+  &__bottom-text {
+    width: 25.8125rem;
+    margin-bottom: 2.9375rem;
+  }
+
+  &__buttons {
+    width: max-content;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__left-button {
+    width: 130px;
+    box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+
+    & .button {
+      border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+    }
+  }
+
+  &__right-button {
+    width: 130px;
+
+    & .button {
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 2px;
+    }
+  }
+
+  &__illustrations {
+    position: relative;
+  }
+
+  &__left-smartphone {
+    width: 107px;
+    height: 214px;
+    position: absolute;
+    background: black;
+    box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15);
+    border-radius: 15px;
+  }
+
+  &__tablet {
+    width: 539.95px;
+    height: 336.62px;
+    position: absolute;
+    background: red;
+    box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15);
+    border-radius: 15px;
+  }
+
+  &__right-smartphone {
+    width: 148px;
+    height: 280px;
+    position: absolute;
+    background: blue;
+    box-shadow: 0px 20px 40px rgba(53, 60, 115, 0.15);
+    border-radius: 15px;
+  }
+}

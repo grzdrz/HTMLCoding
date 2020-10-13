@@ -1,0 +1,42 @@
+include ../button/button
+
+mixin plan-and-manage(options = {})
+  -
+    const {
+
+    } = options;
+
+  div(class=["plan-and-manage"])
+    div(class=["plan-and-manage__description"])
+      span(class=["plan-and-manage__top-text"])
+        | DESKTOP AND MOBILE APP
+      span(class=["plan-and-manage__central-text"])
+        span(class=["plan-and-manage__central-text-left-word"])
+          | Plan 
+        span(class=["plan-and-manage__central-text-central-word"])
+          | and 
+        span(class=["plan-and-manage__central-text-right-word"])
+          | manage
+      span(class=["plan-and-manage__bottom-text"])
+        | Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. 
+        | Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.
+      div(class=["plan-and-manage__buttons"])
+        div(class=["plan-and-manage__left-button"])
+          +button({
+            backgroundColor: "blue",
+            color: "white",
+            text: "View video",
+            hasArrow: true,
+          })
+        div(class=["plan-and-manage__right-button"])
+          +button({
+            backgroundColor: "transparent",
+            color: "light-gray-blue2",
+            hasBorder: true,
+            text: "See features",
+          })
+    div(class=["plan-and-manage__illustrations"])
+      div(class=["plan-and-manage__left-smartphone"])
+      div(class=["plan-and-manage__tablet"])
+        div(class=["plan-and-manage__tablet-stand"])
+      div(class=["plan-and-manage__right-smartphone"])

@@ -3,6 +3,7 @@ extends ../base/base
 include ../../components/header/header.pug
 include ../../components/hero-image/hero-image.pug
 include ../../components/customers/customers.pug
+include ../../components/plan-and-manage/plan-and-manage.pug
 include ../../components/footer/footer.pug
 
 block body
@@ -13,5 +14,7 @@ block body
       +hero-image()
     div(class=["page1__customers"])
       +customers()
+    div(class=["page1__plan-and-manage"])
+      +plan-and-manage()
     div(class=["page1__footer"])
       +footer()
